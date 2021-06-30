@@ -1,0 +1,75 @@
+.feedback {
+  margin-bottom: 200px;
+}
+
+.feedback .section_ttl {
+  margin-bottom: 80px;
+}
+.feedback_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback_item {
+  width: 30%;
+  height: auto;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.feedback_item:hover {
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  opacity: 0.7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+}
+.feedback_img {
+  display: contents;
+  width: 100%;
+}
+
+.feedback_img img {
+  width: 100%;
+}
+.feedback_txt {
+  padding: 0 16px;
+}
+
+.feedback_ttl {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.feedback_date {
+  font-size: 15px;
+  line-height: 1;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.feedback_date::after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow.png) no-repeat;
+  background-size: contain;
+  width: 19%;
+  height: 55%;
+  display: block;
+  right: 13px;
+  top: 50%;
+}
+@media screen and (max-width: 768px) {
+.feedback_ttl {
+  font-size: 16px;
+}
+}

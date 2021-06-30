@@ -1,0 +1,60 @@
+.top {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 8px;
+}
+
+.top_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(221, 189, 82);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+
+.top_ttl {
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  color: #fff;
+  z-index: 2;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+.breadcrumb {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.breadcrumb ul {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.breadcrumb li {
+  font-size: 20px;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.color {
+  color: #ff9175;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .top_ttl {
+  font-size: 40px;
+}
+}
