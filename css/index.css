@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .top {
   width: 100%;
   height: 100vh;
@@ -51,6 +52,11 @@
   margin: 10% 0;
 }
 
+.study_item:nth-of-type(3){
+  box-shadow: none;
+  margin: none;
+}
+
 .study_item._study1 {
 
 }
@@ -60,8 +66,12 @@
   margin-bottom: 0;
 }
 
-.study_item._study3 {
+/* .study_item._study3 {
   bottom: 65px;
+  margin: 0;
+} */
+.study_item._study4 {
+  bottom: 200px;
   margin: 0;
 }
 .study_img {
@@ -81,16 +91,16 @@
   height: 715px;
   background: #ffffff;
   z-index: -1;
-  -webkit-transform: rotate(13deg);
   transform: rotate(13deg);
-  left: 50%;
+  left: 80%;
   top: -25px;
 }
 
 .study_img._study {
-  background: url(../img/service.png) no-repeat center;
-  background-size: cover;
+  background: url(../img/service.png) no-repeat right;
+  background-size: inherit;
   z-index: -1;
+  right: 200px;
 }
 .study_inner_txt {
   padding: 20px 5px 0 20px;
@@ -285,9 +295,12 @@
   height: 120%;
 }
 
-.study_item._study2,
-.study_item._study3{
+.study_item._study2{
   bottom: 0;
+  margin: 0 auto 10%;
+}
+.study_item._study4{
+  bottom: 65px;
   margin: 0 auto 10%;
 }
 
@@ -308,5 +321,70 @@
 }
 .feedback_ttl {
   font-size: 16px;
+}
+}
+@media screen and (max-width: 540px){
+.btn a {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+}
+@media screen and (max-width: 480px) {
+  .top_img img {
+  width: 60%;
+}
+
+.study_item {
+  width: 100%;
+  margin: 0 0 10%;
+  height: auto;
+}
+
+.study_inner_txt {
+  left: 46%;
+}
+.study_item._study4 {
+  bottom: 30px;
+  margin: 0;
+}
+.study_img._study {
+  background: url(../img/service.png) no-repeat right;
+  background-size: inherit;
+  z-index: -1;
+  right: 100px;
+}
+
+.btn {
+  background: #000;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.cimpany_list {
+  display: block;
+}
+
+.company_item {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10%;
+  border: solid 1px #ccc;
+}
+
+.company_sub_ttl {
+  padding-top: 55px;
+}
+
+.feedback_list {
+  display: block;
+}
+
+.feedback_item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+  border: solid 1px #ccc;
 }
 }

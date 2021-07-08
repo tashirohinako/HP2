@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contact_item {
   display: flex;
   position: absolute;
@@ -128,5 +129,66 @@ width: 320px;
 }
 .contact_form_ttl {
 font-size: 10px;
+}
+}
+@media screen and (max-width: 540px){
+  .contact_img::before {
+  position: absolute;
+  content: "";
+  width: 380px;
+  height: 760px;
+  background: #fff;
+  z-index: 0;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  left: -9%;
+  top: -400px;
+}
+  .contact_form_ttl::after {
+  content: "必須";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 60px;
+  line-height: 32px;
+  font-size: 10px;
+  color: #c72930;
+  border: 1px solid #c72930;
+  border-radius: 2px;
+}
+
+}
+@media screen and (max-width: 480px) {
+  .contact_img {
+  background-image: none;
+  height: 0;
+}
+
+.contact_item {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.contact_box {
+  display: block;
+}
+
+.contact_form_ttl::after {
+  position: relative;
+  left: 10px;
+}
+
+.contact_form_box {
+  width: 90%;
+  height: 35px;
+}
+
+.contact_txtarea {
+  width: 90%;
 }
 }
